@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Evaluación diagnóstica de Introducción al Desarrollo Front End con HTML, CSS y JavaScript" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Margarita González" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>página dos</title>
+    </head>
+    <body>
+        <div id="uno"><a href="index.html">PORTADA</a></div>
+        <div id="otro"><a href="page_1.html">01</a> / <strong><a href="page_2.html">02</a></strong> / <a href="page_3.html">03</a></div>
+        <script>
+            function setup() {
+                createCanvas(windowWidth - 50, windowHeight - 50).position(25, 30).style("z-index", -1);
+            }
+            function setup() {
+              createCanvas(windowWidth, windowHeight);
+                background(210,0);
+                noStroke();
+
+              }
+
+function draw() {
+  background(255);
+  from = color(141,0,113, 0.2 * 255);
+  to = color(219,119,199, 0.2 * 255);
+  c1 = lerpColor(from, to, 0.33);
+  c2 = lerpColor(from, to, 0.66);
+  for (let i = 0; i < 15; i++) {
+    fill(from);
+    quad(
+      random(-40, 220), random(height),
+      random(-40, 220), random(height),
+      random(-40, 220), random(height),
+      random(-40, 220), random(height)
+    );
+    fill(c1);
+    quad(
+      random(140, 380), random(height),
+      random(140, 380), random(height),
+      random(140, 380), random(height),
+      random(140, 380), random(height)
+    );
+    fill(c2);
+    quad(
+      random(320, 580), random(height),
+      random(320, 580), random(height),
+      random(320, 580), random(height),
+      random(320, 580), random(height)
+    );
+    fill(to);
+    quad(
+      random(500, 760), random(height),
+      random(500, 760), random(height),
+      random(500, 760), random(height),
+      random(500, 760), random(height)
+    );
+  }
+  frameRate(4);
+}
+function windowResized() {
+    resizeCanvas(windowWidth - 40, windowHeight - 40);
+}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+
+p {
+  color:rgb(139, 0, 139); /* dark magenta */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'font-family: 'Merriweather', serif;
+  font-size: 100%;
+  line-height: 1;
+  text-align: center;
+  background-color: rgb(256,188,196)
+
+}
+
+h1 {
+color: #CD1471
+}
+canvas {
+  display: block;
+}
+
+div{
+  padding:10px 25px 0 25px;
+}
+
+div#uno{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div#otro{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #595959;
+}
+
+a:hover{
+  text-decoration: undeline;
+  color: #333333;
+}
+
+strong{
+  color: #424242;
+}
